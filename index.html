@@ -11,80 +11,103 @@
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
-  <body>
+  <body id="home">
     <nav id="navbar"></nav>
     <div id="sidebar"></div>
 
     <main class="main-content">
 
-    <div id="welcome-section">
-      <h1 class="greeting">Hi! I am <span class="my-name">Fran Moreno</span></h1>
-      <h2 class="greeting-subtitle">A software engineer</h2>
-    </div>
-    
-    <div id="projects-section">
-      <div class="section-intro">
-        <p>Take a look at some of my projects</p>
+      <div id="home-section" class="section">
+        <h1 class="greeting">Fran Moreno</h1>
+        <h2 class="greeting-subtitle">Software Engineer</h2>
       </div>
-      <div class="projects">
-        <div class="project-tile">
-          <div class="project-image">
-            <img src="https://picsum.photos/400/300" alt="project image" />
-          </div>
-          <div class="project-description">
-            <h3 class="project-title" href="#">
-              Glomeruli Segmentation
-            </h3>
-            <p></p>
-          </div>
-        </div>
-        <div class="project-tile">
-          <div class="project-description">
-            <img src="https://picsum.photos/400/300" alt="project image" />
-          </div>
-          <a class="project-title" href="#">
-            Productivity tracker
-          </a>
-        </div>
-        <div class="project-tile">
-          <div class="project-description">
-            <img src="https://picsum.photos/400/300" alt="project image" />
-          </div>
-          <a class="project-title" href="#">
-            My Balance
-          </a>
-        </div> 
-      </div>
-    </div>
-    <div id="contact-section">
-      <div class="section-intro">
-        <p>Let's work together!</p>
-      </div>
-      <ul class="contact-links">
-        <li class="contact-link">
-          <a target="_blank" href="https://www.linkedin.com/in/franciscomorenorodgiruez/">
-            <img class="contact-icon" src="assets/images/icons/linkedin_fill.svg" alt="LinkedIn" />
-          </a>
-        </li>
-        <li class="contact-link">
-          <a target="_blank" href="https://github.com/Franm99">
-            <img class="contact-icon" src="assets/images/icons/github_fill.svg" alt="GitHub" />
-          </a>
-        </li>
-        <li class="contact-link">
-          <a target="_blank" href="mailto: fran.moreno.se@gmail.com">
-            <img class="contact-icon" src="assets/images/icons/mail_fill.svg" alt="Gmail" />
-          </a>
-        </li>
-        <li class="contact-link">
-          <a target="_blank" href="https://t.me/franmoreno99">
-            <img class="contact-icon" src="assets/images/icons/telegram_fill.svg" alt="Telegram" />
-          </a>
-        </li>
-      </ul>
 
-      </ul>
-    </div>
+      <div id="about-section" class="section">
+        <h1 class="greeting">About me</h1>
+        <h2 class="greeting-subtitle"Software Engineer</h2>
+      </div>
+      
+      <div id="projects-section" class="section">
+        <h1 class="greeting">Projects</h1>
+        
+        <div class="projects">
+
+          <div class="project-tile">
+            <div class="project-image">
+              <img src="https://picsum.photos/400/300" alt="project image" />
+            </div>
+            <div class="project-info">
+              <h3 class="project-title" href="#">
+                Home Balance
+                <a target="_blank" href="#">
+                  <img class="link-icon" src="assets/images/icons/link_out.svg" alt="Link" />
+                </a>
+              </h3>
+              <p class="project-description">Local desktop application really useful to track expenses and incomes for a group of people. Implemented in Flask (back-end) and plain HTML/CSS (front-end). </p>
+            </div>
+          </div>
+          <div class="project-tile">
+            <div class="project-image">
+              <img src="https://picsum.photos/400/300" alt="project image" />
+            </div>
+            <div class="project-info">
+              <h3 class="project-title" href="#">
+                Renal biopsy segmentation tool 
+                <a target="_blank" href="#">
+                  <img class="link-icon" src="assets/images/icons/link_out.svg" alt="Link" />
+                </a>
+              </h3>
+              <p class="project-description">Based on the classic U-Net Machine Learning model for image segmentation, I created a model that detects diseased glomeruli. Achieved up to 95% hit on different diseases.</p>
+            </div>
+          </div>
+          <div class="project-tile">
+            <div class="project-image">
+              <img src="https://picsum.photos/400/300" alt="project image" />
+            </div>
+            <div class="project-info">
+              <h3 class="project-title" href="#">
+                Password Manager API 
+                <a target="_blank" href="#">
+                  <img class="link-icon" src="assets/images/icons/link_out.svg" alt="Link" />
+                </a>
+              </h3>
+              <p class="project-description">REST API built with FastAPI to manage passwords. Implements JWT for security.</p>
+            </div>
+          </div> 
+        </div>
+
+        <div class="section-outro">
+          <a href="projects.html">More projects...</a>
+        </div>
+      </div>
+
+      <div id="contact-section" class="section">
+        <h1 class="greeting">Contact</h1>
+        <ul class="contact-links">
+          <li class="contact-link">
+            <a target="_blank" href="https://www.linkedin.com/in/franciscomorenorodgiruez/">
+              <img class="contact-icon" src="assets/images/icons/linkedin_fill.svg" alt="LinkedIn" />
+            </a>
+          </li>
+          <li class="contact-link">
+            <a target="_blank" href="https://github.com/Franm99">
+              <img class="contact-icon" src="assets/images/icons/github_fill.svg" alt="GitHub" />
+            </a>
+          </li>
+          <li class="contact-link">
+            <a target="_blank" href="mailto: fran.moreno.se@gmail.com">
+              <img class="contact-icon" src="assets/images/icons/mail_fill.svg" alt="Gmail" />
+            </a>
+          </li>
+          <li class="contact-link">
+            <a target="_blank" href="https://t.me/franmoreno99">
+              <img class="contact-icon" src="assets/images/icons/telegram_fill.svg" alt="Telegram" />
+            </a>
+          </li>
+        </ul>
+
+        </ul>
+      </div>
     </main>
     <footer id="footer"></footer>
    <script src="assets/js/main.js"></script>

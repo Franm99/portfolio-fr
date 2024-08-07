@@ -3,6 +3,25 @@ body {
 }
 
 html {
-    color: var(--color2b);
+    color: var(--color1b);
     font-family: "Lato", sans-serif;
 }
+
+html a {
+    color: var(--color1b);
+    text-decoration: none;
+  }
+  
+  html a:visited {
+    color: var(--color1b);
+  }
+  
+  html a:hover {
+    color: var(--color1b);
+  }
+  
+  /* Unordered lists */
+  ul {
+    list-style-type: none;
+    display: flex;
+  }
