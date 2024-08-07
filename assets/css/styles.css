@@ -176,6 +176,22 @@ body {
   width: 80%;
 }
 
+.project-skills {
+  padding-left: 0;
+  padding-top: 20px;
+  gap: 1rem;
+
+}
+
+.skill {
+  padding: 10px;
+  border: solid 1px var(--color1-deg3);
+  border-radius: 5px;
+  color: var(--color4);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
 .section-outro {
   font-size: 2rem;
   font-weight: 800;
