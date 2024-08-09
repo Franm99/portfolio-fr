@@ -12,7 +12,7 @@
   --color5: #85FFC7;
 
   --color1b: #000022;
-  --color2b: #005E7C;
+  --color2b: rgb(0, 94, 124);
   --color3b: #70A0AF;
   --color4b: #7EBCDD;
   --color5b: #F4E8C1;
@@ -44,7 +44,11 @@ body {
 
 /* NAVIGATION BAR */
 #navbar {
-  /* position: fixed; */
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
   z-index: 999;
   background-color: var(--color1b);
   padding: 20px;
@@ -56,7 +60,7 @@ body {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
+  top: 30px;
   border-radius: 2.5rem;
 }
 
@@ -76,39 +80,94 @@ body {
 
 .section {
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  margin-top: -100px;
-  padding-top: 100px;
   width: 100%;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 100px;
+}
+
+.scroll-down a img {
+  height: 4rem;
 }
 
 #home-section {
   justify-content: center;
+  align-items: center;
 
+}
+
+.welcome {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -100px;
+  gap: 2rem;
 }
 
 .greeting {
   font-weight: 1000;
-  padding-bottom: 10rem;
   font-size: 4rem;
-  text-align: center;
+  text-align: left;
   color: var(--color1b);
   margin-bottom: 0;
 }
+
+.greeting-subtitle {
+  font-size: 2.5rem;
+  font-family: "Inconsolata", monospace;
+  margin-top: 0;
+  color: var(--color3b);
+  position: relative;
+}
+
+.greeting-subtitle::before {
+  content: "<";
+  color: var(--color1b);
+  margin-right: 10px;
+}
+
+.greeting-subtitle::after {
+  content: "/>";
+  color: var(--color1b);
+  margin-left: 10px;
+}
+
+#greeting-name {
+  position: relative;
+}
+
+#greeting-name::after {
+  content: "";
+  position: absolute;
+  left: -1%;
+  bottom: 0px;
+  width: 102%;
+  height: 2rem;
+  background-color: rgba(0, 94, 124, 0.3);
+  z-index: -1;
+}
+
+#photo {
+  object-fit: cover;
+  width: 200px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  border: solid 10px var(--color2b);
+}
+
 
 /* Greeting section */
 
 #about-section {
   justify-content: top;
   background-color: var(--color1-deg1);
-}
-
-.greeting-subtitle {
-  font-size: 2rem;
-  border: 1px solid transparent;
-  color: var(--color3b);
 }
 
 /* Projects section */

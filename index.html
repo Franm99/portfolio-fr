@@ -3,11 +3,13 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8">
-    <title>Fran Moreno</title>
+    <title>Francisco Moreno</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Exo+2:wght@600&family=Josefin+Sans&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lemonada:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
@@ -18,13 +20,30 @@
     <main class="main-content">
 
       <div id="home-section" class="section">
-        <h1 class="greeting">Fran Moreno</h1>
-        <h2 class="greeting-subtitle">Software Engineer</h2>
+        <div class="welcome">
+          <img id="photo" src="assets/images/Fran Moreno.jpg">
+          <div class="welcome-text">
+            <h1 class="greeting">Hello there! I am <span id="greeting-name">Francisco Moreno</span></h1>
+            <h2 class="greeting-subtitle">Software Engineer</h2>
+          </div>
+        </div>
+        <span class="scroll-down">
+          <a href="#about-section">
+            <img src="assets/images/icons/scroll-down.svg" alt="Go down" />
+          </a>
+        </span>
       </div>
 
       <div id="about-section" class="section">
-        <h1 class="greeting">About me</h1>
-        <h2 class="greeting-subtitle"Software Engineer</h2>
+        <div>
+          <h1 class="greeting">About me</h1>
+        </div>
+
+        <span class="scroll-down">
+          <a href="#projects-section">
+            <img src="assets/images/icons/scroll-down.svg" alt="Go down" />
+          </a>
+        </span>
       </div>
       
       <div id="projects-section" class="section">
@@ -99,6 +118,12 @@
         <div class="section-outro">
           <a href="projects.html">More projects...</a>
         </div>
+
+        <span class="scroll-down">
+          <a href="#projects-section">
+            <img src="assets/images/icons/scroll-down.svg" alt="Go down" />
+          </a>
+        </span>
       </div>
 
       <button onclick="topFunction()" id="scroll-to-top-button" title="Go to top">
