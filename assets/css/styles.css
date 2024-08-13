@@ -17,8 +17,8 @@
   --color4b: #7EBCDD;
   --color5b: #F4E8C1;
 
-  --icon-width: 8em;
-  --icon-height: 8em;
+  --icon-width: 5em;
+  --icon-height: 5em;
 
   --debug: #eb22af;
 
@@ -261,6 +261,12 @@ body {
 
 #contact-section {
   background-color: var(--color1-deg1);
+  justify-content: center;
+}
+
+#contact-section h1{
+  position: absolute;
+  top: 0px;
 }
 
 .contact-links {
@@ -276,9 +282,15 @@ body {
 
 .contact-link {
   background-color: var(--white);
-  padding: 25px;
-  border-radius: 100px;
+  position: relative;
+  padding: 15px;
+  border-radius: 50%;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1), -5px -5px 5px rgba(0, 0, 0, 0.1);
+  transition: 0.4s;
+}
+
+.contact-link:hover {
+  background-color: var(--color1-deg3);
 }
 
 
