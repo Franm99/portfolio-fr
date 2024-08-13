@@ -94,6 +94,11 @@ body {
 
 .scroll-down a img {
   height: 4rem;
+  transition: 0.3s;
+}
+
+.scroll-down a img:hover {
+  height: 4.5rem;
 }
 
 #home-section {
