@@ -23,7 +23,6 @@
   --debug: #eb22af;
 
   --height-nabvar: 60px;
-
 }
 
 /* DEBUGGING */
@@ -45,33 +44,46 @@ body {
 /* NAVIGATION BAR */
 #navbar {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
-  z-index: 999;
-  background-color: var(--color1b);
+  top: 30px;
   padding: 20px;
-  display: flex;
-  justify-content: center;
+
+  background-color: var(--color1b);
+
   min-width: 40%;
   max-width: 500px;
   height: 40px;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  top: 30px;
+  
   border-radius: 2.5rem;
 }
 
 .nav-list {
   margin: 0 0;
-  padding: 0 0;
+  padding: 0 10px;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .nav-list li {
-  padding: 0 40px;
   font-size: 1.5rem;
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex: 1;
+  text-align: center;
+  justify-content: center;
 }
 
 .nav-list li a {
@@ -104,7 +116,6 @@ body {
 #home-section {
   justify-content: center;
   align-items: center;
-
 }
 
 .welcome {
@@ -343,3 +354,45 @@ body {
   height: 2.5rem;
   
 }
+
+
+/* || MEDIA QUERIES */
+
+/* MEDIUM devices (tablets) */
+@media only screen and (max-width: 1024px) {
+  
+}
+
+/* SMALL devices (phones) */
+@media only screen and (max-width: 768px) {
+  .nav-list li {
+    font-size: 1.2rem;
+  }
+
+  .welcome {
+    display: block;
+    margin-top: 0;
+  }
+
+  .greeting {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .greeting-subtitle {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  #photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .scroll-down {
+    bottom: 50px;
+  }
+}
+
+
