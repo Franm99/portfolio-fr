@@ -32,24 +32,12 @@
           </div>
         </div>
         <span class="scroll-down">
-          <a href="#about-section">
-            <img src="assets/images/icons/scroll-down.svg" alt="Go down" />
-          </a>
-        </span>
-      </div>
-
-      <div id="about-section" class="section">
-        <div>
-          <h1 class="greeting">About me</h1>
-        </div>
-
-        <span class="scroll-down">
           <a href="#projects-section">
             <img src="assets/images/icons/scroll-down.svg" alt="Go down" />
           </a>
         </span>
       </div>
-      
+
       <div id="projects-section" class="section">
         <h1 class="greeting">Projects</h1>
         
@@ -79,7 +67,7 @@
           </div>
           <div class="project-tile">
             <div class="project-image">
-              <img src="https://picsum.photos/400/300" alt="project image" />
+              <img src="assets/images/im1.png" alt="project image" />
             </div>
             <div class="project-info">
               <h3 class="project-title" href="#">
@@ -119,20 +107,88 @@
           </div> 
         </div>
 
-        <div class="section-outro">
+        <!-- <div class="section-outro">
           <a href="projects.html">More projects...</a>
-        </div>
+        </div> -->
 
         <span class="scroll-down">
-          <a href="#projects-section">
+          <a href="#resume-section">
             <img src="assets/images/icons/scroll-down.svg" alt="Go down" />
           </a>
         </span>
       </div>
 
-      <button onclick="topFunction()" id="scroll-to-top-button" title="Go to top">
-        <img src="assets/images/icons/arrow-up-light.svg" alt="Top" />
-      </button>
+      <div id="resume-section" class="section">
+        <div>
+          <h1 class="greeting">Resume</h1>
+        </div>
+
+        <div class="resume_tabs-header tabs-header">
+          <button class="resume_tablink active" onclick="openTab(event, 'tab__tech_skills', 'resume')">Tech Skills</button>
+          <button class="resume_tablink" onclick="openTab(event, 'tab__soft_skills', 'resume')">Soft Skills</button>
+        </div>
+
+        <div class="resume_tabs">
+          <div id="tab__tech_skills" class="resume_tabcontent tabcontent active-tab">
+            <ul id="tech-skills" class="badges-set"></ul>
+          </div>
+          <div id="tab__soft_skills" class="resume_tabcontent tabcontent">
+            <ul id="soft-skills" class="badges-set"></ul>
+          </div>
+        </div>
+
+        <span class="scroll-down">
+          <a href="#about-section">
+            <img src="assets/images/icons/scroll-down.svg" alt="Go down" />
+          </a>
+        </span>
+      </div>
+      <div id="about-section" class="section">
+        <div>
+          <h1 class="greeting">About me</h1>
+        </div>
+
+        <div class="about_tabs-header tabs-header">
+          <button class="about_tablink active" onclick="openTab(event, 'tab__roots', 'about')">My roots</button>
+          <button class="about_tablink" onclick="openTab(event, 'tab__path', 'about')">My path</button>
+          <button class="about_tablink" onclick="openTab(event, 'tab__goals', 'about')">My goals</button>
+        </div>
+
+        <div class="about_tabs">
+          <div id="tab__roots" class="about_tabcontent tabcontent active-tab">
+            <p>
+              I was raised in the south of Spain, with a humble family that passed on to me the most important
+              thing a person can possess: their values. Since I was a child, I've always had a great interest in how
+              things work, and our ability to create new things out from nothing.
+              <br>
+              I've never had a mentor in my career, as no one around me liked technology. But making decisions and failing
+              has never scared me. 
+            </p>
+          </div>
+          <div id="tab__path" class="about_tabcontent tabcontent">
+            <p>
+              To be part on such a wide range of branches (robotics, automation, machine learning, computer vision, software testing, data science and web development) has given me the ability to adapt to the unknown.
+              <br>
+              It is also really enriching to work in such different contexts, groups and cultures. I really think that empathy and communication are the 
+              most important skills that everyone should develop, not only for a job, but for their own life.
+            </p>
+          </div>
+          <div id="tab__goals" class="about_tabcontent tabcontent">
+            <p>
+              After the last years, I still do not have a prefered position in the tech world. But what I'm sure about, is that I'll always be committed to learning and discovering. For me, programming is 
+              about resolving puzzles and riddles in the hardest way someone could imagine. As long as my passion for this job keeps alive, 
+              <br>
+              But everyone needs goals. And our goals change over time. So, right now, for me it is to find the best way to help people that are scared by the power of technology. Any way of making it enjoyable for that kind of people, that is what I want to be part of. How? Let's free our imaginations!
+            </p>
+          </div>
+        </div>
+
+        <span class="scroll-down">
+          <a href="#contact-section">
+            <img src="assets/images/icons/scroll-down.svg" alt="Go down" />
+          </a>
+        </span>
+      </div>
 
       <div id="contact-section" class="section">
         <h1 class="greeting">Contact</h1>
@@ -158,11 +214,18 @@
             </a>
           </li>
         </ul>
-
-        </ul>
+        <footer id="footer">
+          <span>&copy;</span> Copyright 2024. Made by Francisco Moreno.
+        </footer>
       </div>
+
+      <button onclick="topFunction()" id="scroll-to-top-button" title="Go to top">
+        <img src="assets/images/icons/arrow-up-light.svg" alt="Top" />
+      </button>
     </main>
-    <footer id="footer"></footer>
-   <script src="assets/js/main.js" type="module"></script>
+    
+   <script src="assets/js/main.js"></script>
+   <script>
+   </script>
   </body>
 </html>

@@ -99,6 +99,14 @@ body {
   width: 100%;
 }
 
+.section:nth-child(odd) {
+  background-color: var(--color1);
+}
+
+.section:nth-child(even) {
+  background-color: var(--color1-deg1);
+}
+
 .scroll-down {
   position: absolute;
   bottom: 100px;
@@ -178,19 +186,33 @@ body {
   border: solid 10px var(--color2b);
 }
 
+/* Resume section */
+#resume-section {
+
+}
 
 /* Greeting section */
 
 #about-section {
   justify-content: top;
-  background-color: var(--color1-deg1);
+}
+
+.tabs-header button.active {
+  background-color: red;
+}
+
+.tabcontent {
+  display: none;
+}
+
+.active-tab {
+  display: block;
 }
 
 /* Projects section */
 
 #projects-section {
-  background-color: var(--color1);
-  margin-bottom: 200px;
+  padding-bottom: 200px;
 }
 
 .section-intro {
@@ -233,6 +255,8 @@ body {
   aspect-ratio: 16 / 9;
   width: 100%;
   max-width: 750px;
+  object-fit: cover;
+  
 }
 
 .project-tile a {
@@ -242,7 +266,7 @@ body {
 }
 
 .project-title {
-  font-size: 3rem;
+  font-size: 2.8rem;
   margin-top: 0;
 }
 
@@ -276,8 +300,17 @@ body {
 /* Contact section */
 
 #contact-section {
-  background-color: var(--color1-deg1);
   justify-content: center;
+}
+
+footer {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  background-color: var(--color1b);
+  padding: 20px 0;
+  color: var(--color1);
 }
 
 #contact-section h1{
@@ -330,7 +363,7 @@ body {
 #scroll-to-top-button {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
+  bottom: 100px; /* Place the button at the bottom of the page */
   right: 30px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
