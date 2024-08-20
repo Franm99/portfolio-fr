@@ -30,6 +30,20 @@
   border: solid 1px var(--debug);
 } */
 
+.link-visible {
+  font-weight: 550;
+  color: var(--color3);
+  transition: .3s;
+}
+
+.link-visible:visited {
+  color: var(--color3);
+}
+
+.link-visible:hover {
+  border-bottom: solid var(--color3) 4px;
+}
+
 /* GENERAL HTML STYLING */
 body {
   background-color: var(--color1);
@@ -107,6 +121,11 @@ body {
   background-color: var(--color1-deg1);
 }
 
+.section-title {
+  display: flex;
+  align-items: center;
+}
+
 .scroll-down {
   position: absolute;
   bottom: 100px;
@@ -140,7 +159,23 @@ body {
   font-size: 4rem;
   text-align: left;
   color: var(--color1b);
-  margin-bottom: 0;
+  margin: 10px 0;
+  position: relative;
+}
+
+.next-section {
+  position: absolute;
+  left: calc(100% + 20px);
+  top: 5px;
+}
+
+.next-section-icon {
+  height: 3rem;
+  transition: 0.3s
+}
+
+.next-section-icon:hover {
+  height: 3.5rem;
 }
 
 .greeting-subtitle {
@@ -186,6 +221,101 @@ body {
   border: solid 10px var(--color2b);
 }
 
+#photo-menu {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -75px 0 0 -75px;
+  list-style: none;
+  font-size: 200%;
+}
+
+.menu-button {
+  opacity: 0;
+  z-index: -1;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -75px 0 0 -75px;
+  border-radius: 50%;
+  background: #424242;
+  background-size: 100%;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+#photo-menu:not(:target)>a:first-of-type,
+#photo-menu:target>a:last-of-type {
+  opacity: 1;
+  z-index: 1;
+}
+
+#photo-menu:not(:target)>.icon-plus:before,
+#photo-menu:target>.icon-minus:before {
+    opacity: 1;
+}
+
+.menu-item {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  left: 55%;
+  line-height: 5px;
+  top: 50%;
+  margin: -50px 0 0 -50px;
+  border-radius: 50%;
+  background-color: red;
+  transform: translate(0px, 0px);
+  transition: transform 500ms;
+  z-index: -2;
+  transition: .5s;
+}
+
+.menu-item:hover {
+  opacity: 0.5;
+  box-shadow: 0 5px 10px black;
+}
+
+.menu-item a {
+  color: #fff;
+  position: relative;
+  top: 30%;
+  left: 0;
+  text-decoration: none;
+}
+
+#photo-menu:target>.menu-item:nth-child(6) {
+  transform: rotate(60deg) translateY(-150px) rotate(300deg);
+  transition-delay: 0s;
+}
+
+#photo-menu:target>.menu-item:nth-child(5) {
+  transform: rotate(20deg) translateY(-155px) rotate(-20deg);
+  transition-delay: 0.1s;
+}
+
+#photo-menu:target>.menu-item:nth-child(4) {
+  transform: rotate(-60deg) translateY(-150px) rotate(60deg);
+  transition-delay: 0.3s;
+}
+
+#photo-menu:target>.menu-item:nth-child(3) {
+  transform: rotate(-20deg) translateY(-155px) rotate(20deg);
+  transition-delay: 0.2s;
+}
+.my-content {
+  position: absolute;
+  text-align: center;
+  margin: -10px 0 0 -30px;
+  top: 70%;
+  left: 50%;
+  font-size: 20px;
+}
+
 /* Resume section */
 #resume-section {
 
@@ -197,12 +327,74 @@ body {
   justify-content: top;
 }
 
+.tabs-header {
+  margin-top: 50px;
+  min-width: 50%;
+  max-width: 80%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tabs-header button{
+  font-size: 2rem;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  background-color: #29737344;
+  color: var(--color4);
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 10px;
+  transition: 0.3s;
+}
+
 .tabs-header button.active {
-  background-color: red;
+  background-color: var(--color4);
+  color: var(--color1);
+}
+
+.about_tablink:first-of-type {
+  border-top-left-radius: 20px;
+}
+
+.about_tabs {
+  position: relative;
+  border: solid var(--color1) 10px;
+  width: 50%;
+  height: 50vh;
+  margin-top: 50px;
+}
+
+.about_tabs::before {
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  width: 20%;
+  height: 20%;
+  content: "";
+  border-left: solid var(--color4) 10px;
+  border-top: solid var(--color4) 10px;
+}
+
+.about_tabs::after {
+  position: absolute;
+  bottom: -25px;
+  right: -25px;
+  width: 20%;
+  height: 20%;
+  content: "";
+  border-right: solid var(--color4) 10px;
+  border-bottom: solid var(--color4) 10px;
 }
 
 .tabcontent {
   display: none;
+  font-size: 1.5vw;
+  margin: 20px 20px;
 }
 
 .active-tab {

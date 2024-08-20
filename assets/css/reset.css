@@ -14,16 +14,16 @@ html a {
     text-decoration: none;
   }
   
-  html a:visited {
-    color: var(--color1b);
-  }
-  
-  html a:hover {
-    color: var(--color1b);
-  }
-  
-  /* Unordered lists */
-  ul {
-    list-style-type: none;
-    display: flex;
-  }
+html a:visited {
+  color: var(--color1b);
+}
+
+html a:hover {
+  color: var(--color1b);
+}
+
+/* Unordered lists */
+ul {
+  list-style-type: none;
+  display: flex;
+}
