@@ -7,7 +7,7 @@
   
   --color1c: #d2dbdb;
   --color2: #E6E6E6;
-  --color3: #FF8552;
+  --color3: rgb(255, 133, 82);
   --color4: #297373;
   --color5: #85FFC7;
 
@@ -33,7 +33,7 @@
 .link-visible {
   font-weight: 550;
   color: var(--color3);
-  transition: .3s;
+  transition: .2s;
 }
 
 .link-visible:visited {
@@ -42,6 +42,25 @@
 
 .link-visible:hover {
   border-bottom: solid var(--color3) 4px;
+}
+
+.important-text {
+  font-weight: bold;
+  color: var(--color4);
+  position: relative;
+  z-index: 2;
+}
+
+.important-text::after {
+  position: absolute;
+  content: "";
+  width: 95%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 30%;
+  bottom: 0;
+  z-index: 0;
+  background-color: rgba(255, 133, 82, 0.3);
 }
 
 /* GENERAL HTML STYLING */
@@ -102,6 +121,11 @@ body {
 
 .nav-list li a {
   color: var(--color1);
+  transition: .3s;
+}
+
+.nav-list li a:hover {
+  color: var(--color3);
 }
 
 .section {
@@ -128,16 +152,7 @@ body {
 
 .scroll-down {
   position: absolute;
-  bottom: 100px;
-}
-
-.scroll-down a img {
-  height: 4rem;
-  transition: 0.3s;
-}
-
-.scroll-down a img:hover {
-  height: 4.5rem;
+  bottom: 50px;
 }
 
 #home-section {
@@ -227,7 +242,8 @@ body {
 
 .next-section-icon {
   height: 3rem;
-  transition: 0.3s
+  position: relative;
+  transition: 0.3s;
 }
 
 .next-section-icon:hover {
@@ -358,7 +374,6 @@ body {
 /* Projects section */
 
 #projects-section {
-  padding-bottom: 200px;
 }
 
 .section-intro {
@@ -395,13 +410,17 @@ body {
 .project-image {
   display: flex;
   justify-content: center;
+  box-sizing: border-box;
 }
 
 .project-image img {
+  box-sizing: border-box;
   aspect-ratio: 16 / 9;
   width: 100%;
   max-width: 750px;
   object-fit: cover;
+  border: solid var(--color1-deg3) 4px;
+  border-radius: 10px;
   
 }
 
@@ -440,7 +459,6 @@ body {
 .section-outro {
   font-size: 2rem;
   font-weight: 800;
-  margin-top: 50px;
 }
 
 /* Contact section */

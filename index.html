@@ -56,8 +56,8 @@
           </div>
         </div>
         <span class="scroll-down">
-          <a href="#projects-section">
-            <img src="assets/images/icons/scroll-down.svg" alt="Go down" />
+          <a class="next-section-link" href="#projects-section">
+            <img class="next-section-icon" src="assets/images/icons/scroll-down.svg" alt="Go down" />
           </a>
         </span>
       </div>
@@ -66,7 +66,7 @@
         <h1 class="greeting">
           Projects
           <span class="next-section">
-            <a href="#resume-section">
+            <a class="next-section-link" href="#resume-section">
               <img class="next-section-icon" src="assets/images/icons/scroll-down.svg" alt="Go down" />
             </a>
           </span>
@@ -77,71 +77,112 @@
 
           <div class="project-tile">
             <div class="project-image">
-              <img src="https://picsum.photos/400/300" alt="project image" />
+              <img src="assets/images/im0.png" alt="project image" />
             </div>
             <div class="project-info">
               <h3 class="project-title" href="#">
-                Home Balance
+                Human Action Recognition 
                 <a target="_blank" href="#">
                   <img class="link-icon" src="assets/images/icons/link_out.svg" alt="Link" />
                 </a>
               </h3>
-              <p class="project-description">Local desktop application really useful to track expenses and incomes for a group of people. Implemented in Flask (back-end) and plain HTML/CSS (front-end). </p>
+              <p class="project-description">As a result of my M.Sc Thesis, I 
+                <a href="https://link.springer.com/chapter/10.1007/978-3-031-04881-4_32" class="link-visible" target="_blank">published</a> my research about Human Action Recognition using a CNN + LSTM Machine Learning model, 
+                with extraordinary findings about using 
+                <a class="link-visible" href="https://rpg.ifi.uzh.ch/research_dvs.html#:~:text=Event%20cameras%2C%20such%20as%20the,in%20the%20order%20of%20microseconds." target="_blank">DVS</a>
+                 sensors instead of conventional ones.</p>
+              <ul class="project-skills">
+                <li class="skill">Python</li>
+                <li class="skill">Computer Vision</li>
+                <li class="skill">OpenCV</li>
+                <li class="skill">Machine Learning</li>
+                <li class="skill">PyTorch</li>
+                <li class="skill">Scikit-Learn</li>
+                <li class="skill">Google Colab</li>
+                <li class="skill">TensorBoard</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project-tile">
+            <div class="project-image">
+              <img src="assets/images/im1.png" alt="project image" />
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">
+                Renal biopsy segmentation tool 
+                <a target="_blank" href="https://github.com/Franm99/glomeruli-segmentation-keras">
+                  <img class="link-icon" src="assets/images/icons/link_out.svg" alt="Link" />
+                </a>
+              </h3>
+              <p class="project-description">Based on the classic U-Net Machine Learning model for image segmentation, I created a model that detects diseased glomeruli. Achieved up to 95% hit on different diseases.</p>
+              <ul class="project-skills">
+                <li class="skill">Python</li>
+                <li class="skill">Computer Vision</li>
+                <li class="skill">OpenCV</li>
+                <li class="skill">Keras</li>
+                <li class="skill">Linux</li>
+                <li class="skill">MATLAB</li>
+                <li class="skill">SSH</li>
+                <li class="skill">Photoshop</li>
+                <li class="skill">U-Net</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="project-tile">
+            <div class="project-image">
+              <img src="assets/images/im2.jpeg" alt="project image" />
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">
+                Home Balance
+                <a target="_blank" href="https://github.com/Franm99/home-balance">
+                  <img class="link-icon" src="assets/images/icons/link_out.svg" alt="Link" />
+                </a>
+              </h3>
+              <p class="project-description">Local desktop to keep track of my expenses and incomes, using record tagging for data analysis. Implemented in Flask (back-end) and plain HTML/CSS (front-end). </p>
               <ul class="project-skills">
                 <li class="skill">Python</li>
                 <li class="skill">Flask</li>
                 <li class="skill">HTML</li>
                 <li class="skill">CSS</li>
                 <li class="skill">Matplotlib</li>
-                <li class="skill">SQLite</li>
+                <li class="skill">SQL</li>
               </ul>
             </div>
           </div>
+          
           <div class="project-tile">
             <div class="project-image">
-              <img src="assets/images/im1.png" alt="project image" />
+              <img src="assets/images/im3.png" alt="project image" />
             </div>
             <div class="project-info">
-              <h3 class="project-title" href="#">
-                Renal biopsy segmentation tool 
-                <a target="_blank" href="#">
-                  <img class="link-icon" src="assets/images/icons/link_out.svg" alt="Link" />
-                </a>
-              </h3>
-              <p class="project-description">Based on the classic U-Net Machine Learning model for image segmentation, I created a model that detects diseased glomeruli. Achieved up to 95% hit on different diseases.</p>
-              <ul class="project-skills">
-                <li class="skill">Keras</li>
-                <li class="skill">Python</li>
-                <li class="skill">Linux</li>
-                <li class="skill">MATLAB</li>
-                <li class="skill">Machine Learning</li>
-              </ul>
-            </div>
-          </div>
-          <div class="project-tile">
-            <div class="project-image">
-              <img src="https://picsum.photos/400/300" alt="project image" />
-            </div>
-            <div class="project-info">
-              <h3 class="project-title" href="#">
+              <h3 class="project-title">
                 Password Manager API 
-                <a target="_blank" href="#">
+                <a target="_blank" href="https://github.com/Franm99/password-manager-api">
                   <img class="link-icon" src="assets/images/icons/link_out.svg" alt="Link" />
                 </a>
               </h3>
-              <p class="project-description">REST API built with FastAPI to manage passwords. Implements JWT for security.</p>
+              <p class="project-description">REST API built with FastAPI to manage passwords. Implements JWT and OAuth2 for user authentication. Not currently deployed in any server.</p>
               <ul class="project-skills">
+                <li class="skill">Python</li>
                 <li class="skill">FastAPI</li>
-                <li class="skill">RESTful</li>
+                <li class="skill">CRUD</li>
+                <li class="skill">SQLAlchemy</li>
+                <li class="skill">cURL</li>
+                <li class="skill">Postman</li>
+                <li class="skill">Pydantic</li>
                 <li class="skill">JWT</li>
+                <li class="skill">OAuth2</li>
               </ul>
             </div>
           </div> 
         </div>
 
-        <!-- <div class="section-outro">
-          <a href="projects.html">More projects...</a>
-        </div> -->
+        <div class="section-outro">
+          <p href="" target="_blank">Please visit my <a class="link-visible" href="https://github.com/Franm99" target="_blank">GitHub</a> to see more projects!</p>
+        </div>
 
       </div>
 
@@ -150,7 +191,7 @@
           <h1 class="greeting">
             Resume
             <span class="next-section">
-              <a href="#about-section">
+              <a class="next-section-link" href="#about-section">
                 <img class="next-section-icon" src="assets/images/icons/scroll-down.svg" alt="Go down" />
               </a>
             </span>
@@ -177,7 +218,7 @@
           <h1 class="greeting">
             About me
             <span class="next-section">
-              <a href="#contact-section">
+              <a class="next-section-link" href="#contact-section">
                 <img class="next-section-icon" src="assets/images/icons/scroll-down.svg" alt="Go down" />
               </a>
             </span>
@@ -194,29 +235,34 @@
           <div id="tab__roots" class="about_tabcontent tabcontent active-tab">
             <p>
               I was raised in the south of Spain, with a humble family that passed on to me the most important
-              thing a person can possess: their values. Since I was a child, I've always had a great interest in how
+              thing a person can possess: their <span class="important-text">values</span>. Since I was a child, I've always had a great interest in how
               things work, and our ability to create new things out from nothing.
             </p>
             <p>
-              I've never had a mentor in my career, as no one around me liked technology. However, I've never been afraid of making decisions or failing. 
+              I've never had a mentor in my career, as no one around me liked technology. However, I've <span class="important-text">never</span> been 
+              <span class="important-text">afraid</span> of making decisions or failing. 
             </p>
           </div>
           <div id="tab__path" class="about_tabcontent tabcontent">
             <p>
-              To be part on such a wide range of tech branches (robotics, automation, machine learning, computer vision, software testing, data science and web development) has given me the ability to adapt to the unknown.
+              To be part on such a wide range of tech branches (robotics, automation, machine learning, computer vision, software testing, data science and web development) has 
+              given me the ability to <span class="important-text">adapt</span> to the <span class="important-text">unknown</span>.
             </p>
             <p>
-              It is also really enriching to work in such different contexts, groups and cultures. I really think that empathy and communication are the 
-              most important skills that everyone should develop, not only for a job, but for their own life.
+              It is also really enriching to work in such different contexts, groups and cultures. I really think that <span class="important-text">empathy</span> and 
+              <span class="important-text">communication</span> are the most important skills that everyone should develop, not only for a job, but for their own life.
             </p>
           </div>
           <div id="tab__goals" class="about_tabcontent tabcontent">
             <p>
-              After the last years, I still do not have a prefered position in the tech world. But what I'm sure about, is that I'll always be committed to learning and discovering. For me, programming is 
-              about resolving puzzles and riddles in the hardest way someone could imagine. 
+              After the last years, I still do not have a prefered position in the tech world. But what I'm sure about, is that I'll <span class="important-text">always</span>
+              be committed to <span class="important-text">learning</span> and <span class="important-text">discovering</span>. For me, programming is about resolving puzzles and 
+              riddles in the hardest way someone could imagine. 
             </p>
             <p>
-              But everyone needs goals. And our goals change over time. So, right now, for me it is to find the best way to help people that are afraid of the power of technology. Any way of making it enjoyable for that kind of people, that is what I want to be part of. How? Let's free our minds, and maybe, <a class="link-visible" href="#contact-section">work together!</a><span>&#128516;</span>
+              But everyone needs <span class="important-text">goals</span>. And our goals change over time. So, right now, for me it is to find the best way to 
+              <span class="important-text">help</span> those that are afraid of the power of technology. Any way of making it enjoyable for that kind of people, that is what I want 
+              to be part of. How? Let's free our minds, and maybe, <a class="link-visible" href="#contact-section">work together!</a><span>&#128516;</span>
             </p>
           </div>
         </div>
