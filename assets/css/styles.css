@@ -12,6 +12,7 @@
   --color5: #85FFC7;
 
   --color1b: #000022;
+  --color1bdeg: #00002266;
   --color2b: rgb(0, 94, 124);
   --color3b: #70A0AF;
   --color4b: #7EBCDD;
@@ -287,8 +288,90 @@ body {
 }
 
 /* Resume section */
-#resume-section {
 
+/* #resume-section {
+
+} */
+
+.resume_tabcontent {
+  width: 85vw;
+}
+
+.skills-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.skillset-container {
+  /* border: solid var(--color1b) 5px; */
+  background-color: #29737344;
+  border-radius: 10px;
+  position: relative;
+  margin: 20px 0;
+}
+
+/* .skillset-container:nth-child(even) {
+  border-color: var(--color4);
+} */
+
+.skillset-title {
+  position: absolute;
+  margin: 0 0 0 10px;
+  padding: 3px 10px;
+  font-size: 1.5rem;
+  color: var(--color1);
+  top: -20px;
+  z-index: 2;
+  border-radius: 10px;
+  /* border: solid var(--color1b) 5px; */
+  background-color: var(--color4);
+}
+
+.skillset {
+  padding: 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.resume-skill {
+  font-family: "Inconsolata", monospace;
+  font-size: 1.2rem;
+  margin: 3px 5px;
+  padding: 3px 10px;
+  background-color: var(--color1bdeg);
+  color: var(--color1);
+  transition: .3s;
+}
+
+.resume-skill:hover {
+  background-color: var(--color1b);
+}
+
+.soft-skills {
+  padding-left: 0;
+  width: 85vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #29737344;
+  border-radius: 10px;
+}
+
+.soft-skill {
+  margin: 20px;
+  padding: 10px 20px;
+  background-color: var(--color4);
+  color: var(--color1);
+  font-weight: 800;
+  font-style: italic;
+  font-size: 2rem;
+  border-radius: 25px;
 }
 
 /* Greeting section */
@@ -333,7 +416,7 @@ body {
 
 .about_tabs {
   position: relative;
-  border: solid var(--color1) 10px;
+  border: solid #29737344 10px;
   width: 50%;
   height: 50vh;
   margin-top: 50px;

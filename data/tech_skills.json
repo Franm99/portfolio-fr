@@ -1,10 +1,60 @@
 {
-    "Python": "95",
-    "Javascript": "50",
-    "C++": "40",
-    "CSS": "70",
-    "HTML": "95",
-    "Git": "90",
-    "GitHub": "80",
-    "Docker": "50"
+    "Programming": [
+        "Python",
+        "C++",
+        "C",
+        "Git",
+        "GitHub",
+        "Bash",
+        "Docker",
+        "SQL",
+        "Agile",
+        "Windows",
+        "Linux",
+        "Arduino",
+        "Unit tests"
+    ],
+    "Web development": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "Flask",
+        "FastAPI",
+        "Django",
+        "Bootstrap",
+        "jQuery"
+    ],
+    "Machine Learning": [
+        "TensorFlow",
+        "PyTorch",
+        "Scikit-Learn",
+        "NLTK",
+        "Keras",
+        "Google Colab",
+        "LSTM Models",
+        "CNN Models"
+    ],
+    "DevOps": [
+        "Jenkins",
+        "GitHub Actions",
+        "Azure DevOps",
+        "AWS EC2",
+        "Selenium",
+        "Behave",
+        "Vagrant",
+        "Virtualization"
+    ],
+    "Big Data": [
+        "Kubernetes",
+        "MongoDB",
+        "Apache Spark",
+        "Apache Kafka",
+        "Hadoop"
+    ],
+    "Web Scraping": [
+        "Selenium",
+        "Robot Framework",
+        "Behave",
+        "BeautifulSoup"
+    ]
 }

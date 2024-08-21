@@ -36,26 +36,42 @@ function projectsScript() {
 }
 
 function softskillsScript() {
-  let soft_skills_list = document.getElementById("soft-skills");
+  let soft_skills_list = document.getElementById("tab__soft_skills");
+  const group = soft_skills_list.appendChild(document.createElement("ul"));
+  group.className = "soft-skills";
   fetch('data/soft_skills.json')
     .then((response) => response.json())
     .then((json) => json.forEach((element) => {
-      const badge = soft_skills_list.appendChild(document.createElement("li"));
+      const badge = group.appendChild(document.createElement("li"));
+      badge.className = "soft-skill";
       badge.textContent = element
     })
   )
 }
 
 function techSkillsScript() {
-  let knowledge_list = document.getElementById("tech-skills");
+  let knowledge_list = document.getElementById("tab__tech_skills");
+  const parent_container = knowledge_list.appendChild(document.createElement("div"));
+  parent_container.className = "skills-container";
   fetch('data/tech_skills.json')
     .then((response) => response.json())
     .then((json) => Object.keys(json).forEach((key) => {
-      console.log(key + "> " + json[key]);
-      const badge = knowledge_list.appendChild(document.createElement("li"));
-      badge.textContent = `${key} -> ${json[key]}`;
-      // const badge = soft_skills_list.appendChild(document.createElement("li"));
-      // badge.textContent = element
+      /* div */
+      const container = parent_container.appendChild(document.createElement("div"))
+      container.className = "skillset-container";
+
+      /* title */
+      const title = container.appendChild(document.createElement("h3"));
+      title.className = "skillset-title";
+      title.textContent = key;
+      
+      const group = container.appendChild(document.createElement("ul"));
+      group.className = "skillset";
+      json[key].forEach((element) => {
+        const badge = group.appendChild(document.createElement("li"));
+        badge.className = "resume-skill"
+        badge.textContent = element;
+      })
     })
   )
 }
