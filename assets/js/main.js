@@ -29,12 +29,6 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-function projectsScript() {
-  fetch('data/projects.json')
-    .then((response) =>  response.json())
-    .then((json) => json.forEach((element) => console.log(element)));
-}
-
 function softskillsScript() {
   let soft_skills_list = document.getElementById("tab__soft_skills");
   const group = soft_skills_list.appendChild(document.createElement("ul"));
@@ -80,7 +74,6 @@ document.addEventListener('DOMContentLoaded', function() {
   loadPartial('navbar', 'partials/header.html');
   loadPartial('sidebar', 'partials/sidebar.html');
 
-  projectsScript();
   softskillsScript();
   techSkillsScript();
 
