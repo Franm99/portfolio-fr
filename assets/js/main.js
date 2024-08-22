@@ -29,6 +29,18 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+function toggleNavbar() {
+  var menuIcon = document.getElementById("toggle-menu");
+  if (menuIcon.style.display === "block") {
+    var navbar = document.getElementById("nav-list");
+    if (navbar.style.display == "block") {
+      navbar.style.display = "none";
+    } else {
+      navbar.style.display = "block";
+    }
+  }
+}
+
 function softskillsScript() {
   let soft_skills_list = document.getElementById("tab__soft_skills");
   const group = soft_skills_list.appendChild(document.createElement("ul"));
