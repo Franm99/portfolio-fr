@@ -162,24 +162,18 @@ body {
 
 .info-link {
   position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: var(--color-text);
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1), -2px -2px 2px rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  width: 5px;
-  height: 5px;
-  padding: 25px;
   text-align: center;
   top: 50%;
   left: 50%;
+  padding: 7px;
   transition: .3s;
 }
 
 .info-link:hover {
   background-color: var(--color-text-secondary);
-
 }
 
 #info-link-1 {
@@ -193,6 +187,17 @@ body {
 }
 #info-link-4 {
   transform: translate(-50%, -50%) rotateZ(-45deg) translateX(-265%) rotateZ(45deg);
+}
+
+.info-link a {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.info-icon {
+  width: 3rem;
+  height: 3rem;
 }
 
 .welcome {
@@ -425,7 +430,7 @@ body {
 
 .tabcontent {
   display: none;
-  font-size: 1.5vw;
+  font-size: 1.4vw;
   margin: 20px 20px;
 }
 
@@ -532,7 +537,7 @@ body {
 
 footer {
   position: absolute;
-  bottom: 20px;
+  bottom: 0;
   width: 100%;
   text-align: center;
   background-color: var(--color-primary);
@@ -578,8 +583,8 @@ footer {
 }
 
 .link-icon {
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
   margin-left: 1rem;
   margin-bottom: -1px;
 }
@@ -593,7 +598,7 @@ footer {
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: var(--color-secondary); /* Set a background color */
+  background-color: var(--color-secondary-hover); /* Set a background color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 20px; /* Some padding */
   border-radius: 50%; /* Rounded corners */
@@ -605,13 +610,15 @@ footer {
 }
 
 #scroll-to-top-button:hover {
-  background-color: var(--color-secondary-hover);
+  background-color: var(--color-secondary);
 }
 
 #scroll-to-top-button img {
   width: 2.5rem;
   height: 2.5rem;
-  
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%); 
 }
 
 
@@ -690,7 +697,7 @@ footer {
   }
 
   .greeting {
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: center;
   }
 
@@ -703,6 +710,11 @@ footer {
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .info-icon {
+    width: 2.5rem;
+    height: 2.5rem;
   }
 
   .scroll-down {
@@ -803,7 +815,7 @@ footer {
   }
 
   .soft-skill {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 5px;
   }
 
@@ -814,7 +826,7 @@ footer {
   }
 
   .tabcontent {
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: justify;
     padding: 0 5px;
   }
