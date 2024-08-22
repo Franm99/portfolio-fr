@@ -4,7 +4,7 @@ body {
 }
 
 html {
-    color: var(--color1b);
+    color: var(--color-text);
     font-family: "Open Sans", sans-serif;
     scroll-behavior: smooth;
 }
@@ -14,16 +14,16 @@ h1, h2, h3, h4 {
 }
 
 html a {
-    color: var(--color1b);
+    color: var(--color-secondary);
     text-decoration: none;
   }
   
 html a:visited {
-  color: var(--color1b);
+  color: var(--color-secondary);
 }
 
 html a:hover {
-  color: var(--color1b);
+  color: var(--color-secondary);
 }
 
 /* Unordered lists */
