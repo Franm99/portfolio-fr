@@ -845,6 +845,13 @@ footer {
     padding: 0 5px;
   }
 
+  .contact-links {
+    margin: 0 0;
+    height: 60vh;
+    gap: 20px;
+    justify-content: space-evenly;
+  }
+
   .next-section-icon {
     height: 2rem;
   }
