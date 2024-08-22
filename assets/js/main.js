@@ -31,7 +31,7 @@ function topFunction() {
 
 function toggleNavbar() {
   var menuIcon = document.getElementById("toggle-menu");
-  if (menuIcon.style.display === "block") {
+  if (menuIcon.offsetParent != null) {
     var navbar = document.getElementById("nav-list");
     if (navbar.style.display == "block") {
       navbar.style.display = "none";

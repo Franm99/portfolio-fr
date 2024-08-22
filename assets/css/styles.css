@@ -735,9 +735,110 @@ footer {
     bottom: 50px;
   }
 
-  .skills-container {
-    overflow: hidden;
+
+  .projects {
+    width: 100%;
   }
+
+  .project-tile {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 10px;
+    border-radius: 0;
+    width: 100vw;
+  }
+
+  .project-image img {
+
+  }
+
+  .project-title {
+    font-size: 2rem;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    align-items: center;
+    text-align: left;
+    margin-top: 20px;
+  }
+
+  .project-description {
+    width: 100%;
+    text-align: justify;
+    padding: 0 10px;
+    font-size: 1.3rem;
+  }
+
+  .project-skills {
+    padding-top: 10px;
+    gap: 0.5rem;
+  }
+
+  .skill {
+    padding: 5px;
+    font-size: 1rem;
+  }
+
+  .section-outro {
+    font-size: 1.5rem;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .tabcontent {
+    margin: 20px 0;
+  }
+  .resume_tabcontent {
+    width: 100vw;
+  }
+  .tabs-header {
+    margin-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  .tabs-header button {
+    font-size: 1.2rem;
+  }
+
+  .skills-container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .skillset-container {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .resume-skill {
+    font-size: 1rem;
+  }
+
+  .skillset-title {
+    font-size: 1.2rem;
+  }
+
+  .soft-skills {
+    width: 100vw;
+    margin-top: 0;
+    padding: 10px;
+    justify-content: space-between;
+  }
+
+  .soft-skill {
+    font-size: 1.2rem;
+    margin: 5px;
+  }
+
+  .next-section-icon {
+    height: 2rem;
+  }
+
+  #scroll-to-top-button img {
+    width: 1.5rem;
+    height: 1.5rem;
+  } 
 }
 
 
