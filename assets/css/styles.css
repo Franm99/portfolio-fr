@@ -43,25 +43,14 @@
 
 .link-visible:hover {
   border-bottom: solid var(--color3) 4px;
+  color: var(--color3);
 }
 
 .important-text {
-  font-weight: bold;
+  font-weight: 750;
   color: var(--color4);
   position: relative;
   z-index: 2;
-}
-
-.important-text::after {
-  position: absolute;
-  content: "";
-  width: 95%;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 30%;
-  bottom: 0;
-  z-index: 0;
-  background-color: rgba(255, 133, 82, 0.3);
 }
 
 /* GENERAL HTML STYLING */
@@ -624,9 +613,12 @@ footer {
   color: var(--color1); /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 20px; /* Some padding */
-  border-radius: 100px; /* Rounded corners */
+  border-radius: 50%; /* Rounded corners */
   font-size: 1rem; /* Increase font size */
   transition: background-color 0.2s ease-out;
+  width: 64px;
+  height: 64px;
+  align-items: center;
 }
 
 #scroll-to-top-button:hover {
