@@ -793,10 +793,12 @@ footer {
   .tabs-header {
     margin-top: 10px;
     padding-bottom: 20px;
+    max-width: 95%;
   }
 
   .tabs-header button {
     font-size: 1.2rem;
+    padding: 15px 15px;
   }
 
   .skills-container {
@@ -829,6 +831,18 @@ footer {
   .soft-skill {
     font-size: 1.2rem;
     margin: 5px;
+  }
+
+  .about_tabs {
+    width: 90%;
+    height: 65vh;
+    margin-top: 10px;
+  }
+
+  .tabcontent {
+    font-size: 1.1rem;
+    text-align: justify;
+    padding: 0 5px;
   }
 
   .next-section-icon {
